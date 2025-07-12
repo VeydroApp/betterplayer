@@ -14,11 +14,11 @@ class SchemeData {
   final bool? requiresSecureDecryption;
 
   SchemeData copyWithData(Uint8List? data) => SchemeData(
-        licenseServerUrl: licenseServerUrl,
-        mimeType: mimeType,
-        data: data,
-        requiresSecureDecryption: requiresSecureDecryption,
-      );
+    licenseServerUrl: licenseServerUrl,
+    mimeType: mimeType,
+    data: data,
+    requiresSecureDecryption: requiresSecureDecryption,
+  );
 
   @override
   bool operator ==(dynamic other) {
@@ -28,13 +28,11 @@ class SchemeData {
           other.requiresSecureDecryption == requiresSecureDecryption &&
           other.data == data;
     }
-
     return false;
   }
 
   @override
   int get hashCode => Object.hash(
-    uuid,
     mimeType,
     licenseServerUrl,
     data,
