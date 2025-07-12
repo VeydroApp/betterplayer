@@ -18,5 +18,8 @@ class DrmInitData {
   }
 
   @override
-  int get hashCode => Object.hash(schemeType, schemeData);
+  int get hashCode => Object.hash(
+    schemeType,
+    Object.hashAll(schemeData),
+  );
 }
