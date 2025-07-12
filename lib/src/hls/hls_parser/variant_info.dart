@@ -27,10 +27,14 @@ class VariantInfo {
 
   @override
   int get hashCode => Object.hash(
-        bitrate,
-        videoGroupId,
-        audioGroupId,
-        subtitleGroupId,
-        captionGroupId,
-      );
+      bandwidth,
+      averageBandwidth,
+      codecs,
+      resolution,
+      frameRate,
+      videoGroupId,
+      audioGroupId,
+      subtitleGroupId,
+      closedCaptionGroupId,
+  );
 }
